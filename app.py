@@ -1,50 +1,60 @@
+from pandas.core.frame import DataFrame
 import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib as plt
 import seaborn as sns
 import joblib
-df = pd.read_csv('data/월세집값.csv')
-st.dataframe(df)
+import streamlit as st
+import time
+import numpy as np
+import altair as alt
+from vega_datasets import data
+from chart import run_chart
+from dataframe import run_datafrme
+
+from price import run_price 
+
+df = pd.read_csv('data/월세정리.csv')
+df2 = pd.read_csv('data/전세정리.csv')
+df3 = pd.read_csv('data/매매정리.csv')
 
 
+# option = st.selectbox(
+#      'How would you like to be contacted?',
+#      ('Email', 'Home phone', 'Mobile phone'))
 
-# chart_data = pd.DataFrame(
-#     np.random.randn(20, 3),
-#     columns=['a', 'b', 'c'])
-    
-    
-chart_data = pd.DataFrame(df[['2018상평월보', '2018하평월보' ,'2019상평월보', '2019하평월보', '2020상평월보' ]])
+# st.write('You selected:', option)
 
-# df.columns()
-
-
-    
-st.line_chart(chart_data)
-
-# from eda_app import run_eda_app
-# from ml_app import run_ml_app
+# 1
 
 def main() :
-    pass
+    menu = ['Home', 'Officetel information', 'Data analysis', 'Chart analysis']
 
+    choice = st.sidebar.selectbox('Choose a menu', menu)
 
+    if choice == 'Home' :
+        st.subheader('The Web-site about Officentel')
+        
+        st.write('the Officentel video in South-Korea : ')
+        video_file = open('video/오피스텔.mp4', 'rb')
+        video_bytes = video_file.read()
 
-    # menu = ['홈', '데이터분석', '신체능력평가하기']
-
-    # choice = st.sidebar.selectbox('메뉴 선택', menu)
-
-    # if choice == '홈' :
-    #     st.subheader('당신의 신체능력을 평가합니다.')
-    #     st.write('A= 최상, B= 상, C= 중간, D= 하')
-    #     st.write('왼쪽의 사이드바에서 "평가하기"를 선택하여 평가하세요')
+        st.video(video_bytes)
+        st.write('<ㅡ Please choose a left menu')
+        st.write('')
     
-    # elif choice == '데이터분석' :
-    #     run_eda_app()
+    elif choice == 'Officetel information' :
+        run_price()
 
-    # elif choice == '신체능력평가하기' :
-    #     run_ml_app()
+    elif choice == 'Data analysis' :
+        run_datafrme()
 
+    elif choice == 'Chart analysis' :
+        run_chart()
+
+
+    
 
 if __name__ == '__main__' :
     main()
