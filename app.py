@@ -29,10 +29,11 @@ def main() :
         st.subheader('The Web-site about Officentel')
        
         st.write('the Officentel video in 서울 : ')
+        st.caption("서울 강남구 역삼동 'THE GALLERY 832")
         video_file = open('video/오피스텔.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
-        st.caption("서울 강남구 역삼동 'THE GALLERY 832', 영상 출처 : https://www.gallery832.com/contact-4")
+        st.caption("영상 출처 : https://www.gallery832.com/contact-4")
         
         st.write('<ㅡ Please choose a left menu')
         
