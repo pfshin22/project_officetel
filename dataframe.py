@@ -46,7 +46,7 @@ def run_datafrme() :
         st.dataframe(df3) 
         st.caption('단위 : 1000won')
 
-    selected_radio = st.radio('select the rent kind & years : ', ('월세', '전세', '매매'))
+    selected_radio = st.radio('select the city & years : ', ('월세', '전세', '매매'))
     if selected_radio == '월세' :
         selected_year = st.multiselect(' ', df.columns)
         if len(selected_year) != 0 :
