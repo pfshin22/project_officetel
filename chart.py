@@ -29,7 +29,7 @@ def run_chart() :
     
 
     selected_year = st.selectbox('select the year :', df_year.columns)
-    st.caption('단위 : 1000won')
+    
     
     if selected_year == '2018' :
         selected_radio = st.radio('select the kind of graph', ('bar', 'aria', 'line'))    
@@ -37,12 +37,15 @@ def run_chart() :
             
             fig = px.bar(df, x = df['지역'] , y='2018', title="2018년 월세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
             fig = px.bar(df2, x = df2['지역'] , y='2018', title="2018년 전세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
             fig = px.bar(df3, x = df3['지역'] , y='2018', title="2018년 매매가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
 
         elif selected_radio == 'aria' :
@@ -55,12 +58,15 @@ def run_chart() :
             
             fig = px.line(df, x = df['지역'] , y='2018', title="2018년 월세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
             fig = px.line(df2, x = df2['지역'] , y='2018', title="2018년 전세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
             fig = px.line(df3, x = df3['지역'] , y='2018', title="2018년 매매가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
     elif selected_year == '2019' :
         selected_radio = st.radio('select the kind of graph', ('bar', 'aria', 'line'))    
@@ -68,12 +74,15 @@ def run_chart() :
             
             fig = px.bar(df, x = df['지역'] , y='2019', title="2019년 월세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
             
             fig = px.bar(df2, x = df2['지역'] , y='2018', title="2019년 전세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
             fig = px.bar(df3, x = df3['지역'] , y='2018', title="2019년 매매가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
         elif selected_radio == 'aria' :
             
@@ -85,12 +94,15 @@ def run_chart() :
             
             fig = px.line(df, x = df['지역'] , y='2019', title="2019년 월세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
            
             fig = px.line(df2, x = df2['지역'] , y='2018', title="2019년 전세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
            
             fig = px.line(df3, x = df3['지역'] , y='2018', title="2019년 매매가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
                
     elif selected_year == '2020' :
         selected_radio = st.radio('select the kind of graph', ('bar', 'aria', 'line'))    
@@ -98,12 +110,15 @@ def run_chart() :
             
             fig = px.bar(df, x = df['지역'] , y='2020', title="2020년 월세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
             
             fig = px.bar(df2, x = df2['지역'] , y='2018', title="2020년 전세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
             fig = px.bar(df3, x = df3['지역'] , y='2018', title="2020년 매매가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
         elif selected_radio == 'aria' :
             
@@ -115,12 +130,15 @@ def run_chart() :
             
             fig = px.line(df, x = df['지역'] , y='2018', title="2020년 월세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
             
             fig = px.line(df2, x = df2['지역'] , y='2018', title="2020년 전세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
             fig = px.line(df3, x = df3['지역'] , y='2018', title="2020년 매매가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
     
     elif selected_year == '2021' :
         selected_radio = st.radio('select the kind of graph', ('bar', 'aria', 'line'))    
@@ -128,12 +146,15 @@ def run_chart() :
             
             fig = px.bar(df, x = df['지역'] , y='2021', title="2021년 월세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
             
             fig = px.bar(df2, x = df2['지역'] , y='2018', title="2021년 전세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
             fig = px.bar(df3, x = df3['지역'] , y='2018', title="2021년 매매가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
         elif selected_radio == 'aria' :
             
@@ -145,12 +166,15 @@ def run_chart() :
             
             fig = px.line(df, x = df['지역'] , y='2018', title="2021년 월세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
             
             fig = px.line(df2, x = df2['지역'] , y='2018', title="2021년 전세가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
             
             fig = px.line(df3, x = df3['지역'] , y='2018', title="2021년 매매가격")
             st.plotly_chart(fig)
+            st.caption('y단위 : 1000won')
 
 
     # st.radio('select the kind of graph', ('지역별', '전국'))  
