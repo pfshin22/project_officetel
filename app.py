@@ -31,7 +31,8 @@ def main() :
         st.write('the Officentel video in South-Korea : ')
         video_file = open('video/오피스텔.mp4', 'rb')
         video_bytes = video_file.read()
-        st.caption("서울시 강남구 역삼동 오피스텔 'THE GALLERY 832' ")
+        st.caption("오피스텔 in 서울 : 서울 강남구 역삼동 'THE GALLERY 832' ")
+        st.caption('영상 출처 : https://www.gallery832.com/contact-4')
 
         st.video(video_bytes)
         st.write('<ㅡ Please choose a left menu')
