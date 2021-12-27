@@ -28,7 +28,7 @@ def main() :
     if choice == 'Home' :
         st.subheader('The Web-site about Officentel')
        
-        st.write('the Officentel video in South-Korea : ')
+        st.write('the Officentel video in 서울 : ')
         video_file = open('video/오피스텔.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
