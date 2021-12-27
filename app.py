@@ -34,7 +34,7 @@ def main() :
 
         st.video(video_bytes)
         st.write('<ㅡ Please choose a left menu')
-        st.write('')
+        st.caption('데이터출처 : 한국부동산원')
    
     elif choice == 'Officetel information' :
         run_price()
