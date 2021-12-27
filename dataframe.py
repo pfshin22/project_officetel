@@ -35,33 +35,41 @@ def run_datafrme() :
     st.subheader('Analysis about : 데이터프레임')
     st.write('select the rent kind : ')
     if st.button ('월세') :
+        st.caption('평균가격')
         st.dataframe(df) 
         st.caption('단위 : 1000won')   
+        
+        
          
     if st.button ('전세') :
+        st.caption('평균가격')
         st.dataframe(df2)
-        st.caption('단위 : 1000won')
+        st.caption('단위 : 1000won')   
 
     if st.button ('매매') :
+        st.caption('평균가격')
         st.dataframe(df3) 
-        st.caption('단위 : 1000won')
+        st.caption('단위 : 1000won')   
 
     selected_radio = st.radio('select the city & years : ', ('월세', '전세', '매매'))
     if selected_radio == '월세' :
         selected_year = st.multiselect(' ', df.columns)
         if len(selected_year) != 0 :
+            st.caption('평균가격')
             st.dataframe(df[selected_year])
             st.caption('단위 : 1000won')
 
     if selected_radio == '전세' :
         selected_year = st.multiselect(' ', df2.columns)
         if len(selected_year) != 0 :
+            st.caption('평균가격')
             st.dataframe(df2[selected_year])
             st.caption('단위 : 1000won')
 
     if selected_radio == '매매' :
         selected_year = st.multiselect(' ', df3.columns)
         if len(selected_year) != 0 :
+            st.caption('평균가격')
             st.dataframe(df3[selected_year])
             st.caption('단위 : 1000won')
 

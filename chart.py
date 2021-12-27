@@ -22,7 +22,7 @@ def run_chart() :
     df_r = df['지역']
     df_year = df.iloc[ : , 1 :  ]
   
-    st.subheader('Analysis about : 지역별 오피스텔 가격')
+    st.subheader('Analysis about : 지역별 오피스텔 평균가격')
 
     # fig = px.bar(df['2018'], x = df['지역'] , y='2018', title="2018 monthly rent for city")
     # st.plotly_chart(fig)
