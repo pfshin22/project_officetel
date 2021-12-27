@@ -38,11 +38,11 @@ def run_datafrme() :
         st.dataframe(df) 
         st.caption('단위 : 1000won')   
          
-    elif st.button ('전세') :
+    if st.button ('전세') :
         st.dataframe(df2)
         st.caption('단위 : 1000won')
 
-    elif st.button ('매매') :
+    if st.button ('매매') :
         st.dataframe(df3) 
         st.caption('단위 : 1000won')
 
