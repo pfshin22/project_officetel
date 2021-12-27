@@ -26,7 +26,7 @@ def main() :
     choice = st.sidebar.selectbox('Choose a menu', menu)
 
     if choice == 'Home' :
-        st.subheader('The Web-site about Officentel')
+        st.subheader('The Web-site about Officentel Average Price')
        
         st.write('the Officentel video in 서울 : ')
         st.caption("서울 강남구 역삼동 'THE GALLERY 832")
