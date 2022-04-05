@@ -1,2 +1,14 @@
 # House
 분기별로 집값 정리
+
+메인화면
+![image](https://user-images.githubusercontent.com/96038765/161719804-620c8ab8-3708-448c-ba52-a1d07d65421f.png)
+
+지역별 오피스텔 정보 화면
+![image](https://user-images.githubusercontent.com/96038765/161719976-7bcda341-e4c3-4b57-8345-4761cdfb7712.png)
+
+데이터프레임 정보 분석 화면
+![image](https://user-images.githubusercontent.com/96038765/161720213-9d757621-3278-43f4-92a0-ae9fe83e0f93.png)
+
+지역별 오피스텔 가격 바차트, 라인차트로 비교하여 나타내기 
+![image](https://user-images.githubusercontent.com/96038765/161720421-1a55d352-8fe0-4d69-9954-4af1094b9498.png)
