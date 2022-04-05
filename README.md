@@ -1,5 +1,5 @@
-# House
-분기별로 집값 정리
+# 전국 오피스텔 가격에 대한 대시보드를 streamlit을 이용해 vscode에서 개발하기
+주제 : 년도 별로 전국의 각 지역별 오피스텔 가격 정리
 
 메인화면
 ![image](https://user-images.githubusercontent.com/96038765/161719804-620c8ab8-3708-448c-ba52-a1d07d65421f.png)
